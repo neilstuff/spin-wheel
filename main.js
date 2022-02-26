@@ -49,7 +49,7 @@ function createWindow() {
     }
 
     mainWindow.setMenu(null);
-    mainWindow.setTitle('Wordily') // Window name isn't this
+    mainWindow.setTitle('Spinner') // Window name isn't this
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),
         protocol: 'html',
