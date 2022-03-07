@@ -9,29 +9,30 @@
 <body>
 
     <h1>
-        <center style="font-family:cursive; margin-bottom: 16px; font-size:64px;">Give it a GO!
+        <center style="font-family:cursive; margin-bottom: 16px; font-size:48px;">Emoticon Selector
             <p>&#129299; &#128580; &#128552;</p>
         </center>
-
+        <div id="winner" style="display:none; position:absolute; top:375px; z-index: 1; margin-left:185px; font-size:96px; border: 2px solid rgba(0,0,0, 0.0)">
+            <p>&#128517;</p>
+        </div>
         <div id="mainbox" class="mainbox">
+            <div id="hit" style="display:inline-block; position:absolute; top:250px; left:480px; width:4px; height:4px; background-color:rgba(0,0,0,0.0); z-index:1"></div>
             <div id="box" class="box">
-                <div class="box1">
-                    <span class="span1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128512;</b></span>
-                    <span class="span2"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128513;</b></span>
-                    <span class="span3"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128514;</b></span>
-                    <span class="span4"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128515;</b></span>
+                <div id="box1" class="box1">
+                    <span id="choice1" class="selection span1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128512;</b></span>
+                    <span id="choice2" class="selection span2"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128513;</b></span>
+                    <span id="choice3" class="selection span3"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128514;</b></span>
+                    <span id="choice4" class="selection span4"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128579;</b></span>
                 </div>
-                <div class="box2">
-                    <span class="span1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128516;</b></span>
-                    <span class="span2"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128517;</b></span>
-                    <span class="span3"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128518;</b></span>
-                    <span class="span4"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128519;</b></span>
+                <div id="box2" class="box2">
+                    <span id="choice5" class="selection span1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128577;</b></span>
+                    <span id="choice6" class="selection span2"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128547;</b></span>
+                    <span id="choice7" class="selection span3"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128545;</b></span>
+                    <span id="choice8" class="selection span4"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128562;</b></span>
                 </div>
             </div>
-
             <button class="spin" onclick="spin()">SPIN</button>
         </div>
-
 
         <script src="assets/javascript/controller.js"></script>
 

@@ -24,15 +24,15 @@ var mainWindow = null;
 function createWindow() {
 
     mainWindow = new BrowserWindow({
-        width: (config.mode == "debug") ? 940 : 700,
+        width: (config.mode == "debug") ? 1540 : 700,
         height: 760,
         resizable: false,
         frame: true,
         maximizable: false,
         minHeight: 760,
-        minWidth: (config.mode == "debug") ? 940 : 700,
+        minWidth: (config.mode == "debug") ? 1540 : 700,
         maxHeight: 760,
-        maxWidth: (config.mode == "debug") ? 940 : 700,
+        maxWidth: (config.mode == "debug") ? 1540 : 700,
         fullscreenable: false,
         autoHideMenuBar: true,
 
@@ -49,7 +49,7 @@ function createWindow() {
     }
 
     mainWindow.setMenu(null);
-    mainWindow.setTitle('Spinner') // Window name isn't this
+    mainWindow.setTitle('Spinny') // Window name isn't this
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),
         protocol: 'html',
@@ -78,46 +78,5 @@ app.on('ready', () => {
     });
 
     createWindow();
-
-});
-
-app.on('window-all-closed', () => {
-    app.quit()
-})
-
-app.on('activate', () => {
-    if (mainWindow === null) {
-        createWindow()
-    }
-
-});
-
-ipcMain.on('quit', function(event, arg) {
-
-    app.quit();
-
-});
-
-ipcMain.on('minimize', function(event, arg) {
-
-    mainWindow.minimize();
-
-});
-
-ipcMain.on('isMaximized', function(event, arg) {
-
-    event.returnValue = mainWindow.isMaximized();
-
-});
-
-ipcMain.on('maximize', function(event, arg) {
-
-    mainWindow.maximize();
-
-});
-
-ipcMain.on('unmaximize', function(event, arg) {
-
-    mainWindow.unmaximize();
 
 });
