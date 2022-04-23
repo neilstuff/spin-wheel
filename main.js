@@ -24,15 +24,15 @@ var mainWindow = null;
 function createWindow() {
 
     mainWindow = new BrowserWindow({
-        width: (config.mode == "debug") ? 1540 : 700,
-        height: 760,
+        width: (config.mode == "debug") ? 700 : 350,
+        height: 380,
         resizable: false,
         frame: true,
         maximizable: false,
-        minHeight: 760,
-        minWidth: (config.mode == "debug") ? 1540 : 700,
-        maxHeight: 760,
-        maxWidth: (config.mode == "debug") ? 1540 : 700,
+        minHeight: 380,
+        minWidth: (config.mode == "debug") ? 700 : 350,
+        maxHeight: 380,
+        maxWidth: (config.mode == "debug") ? 700 : 350,
         fullscreenable: false,
         autoHideMenuBar: true,
 
